@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    android:orientation="vertical"
+    tools:context=".quiz.Quiz">
+
+    <ImageButton
+        android:id="@+id/closeBtn"
+        android:layout_width="@dimen/_30sdp"
+        android:layout_height="@dimen/_30sdp"
+        android:background="@drawable/circle_white"
+        android:src="@drawable/ic_back_arrow_black"
+        android:layout_margin="@dimen/_10sdp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:padding="@dimen/_10sdp">
+
+        <TextView
+            style="@style/text_detail_title_quiz"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/_10sdp"
+            android:layout_marginBottom="@dimen/_30sdp"
+            android:textSize="@dimen/_25sdp"
+            android:text="Silahkan pilih level permainan" />
+
+        <LinearLayout
+            android:id="@+id/multipleChoiceCard"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_100sdp"
+            android:layout_margin="@dimen/_10sdp"
+            android:background="@drawable/btn_bg_green">
+
+            <TextView
+                style="@style/text_item_card"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="@dimen/_10sdp"
+                android:gravity="center"
+                android:textColor="@color/white"
+                android:text="@string/multiple_choice" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/essayCard"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_100sdp"
+            android:layout_margin="@dimen/_10sdp"
+            android:background="@drawable/btn_yellow"
+            >
+
+            <TextView
+                style="@style/text_item_card"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="@dimen/_10sdp"
+                android:gravity="center"
+                android:textColor="@color/white"
+                android:text="@string/essay" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/black"
+    tools:context=".situs.PanoramaView">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+<!--        <com.gjiazhe.panoramaimageview.PanoramaImageView-->
+<!--            android:id="@+id/panoramaImg"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="match_parent"-->
+<!--            app:piv_enablePanoramaMode="true"-->
+<!--            app:piv_invertScrollDirection="false"-->
+<!--            app:piv_show_scrollbar="true" />-->
+
+        <pl.rjuszczyk.panorama.viewer.PanoramaGLSurfaceView
+            android:id="@+id/panoramaView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            />
+
+        <ImageButton
+            android:id="@+id/closeBtn"
+            android:layout_width="@dimen/_30sdp"
+            android:layout_height="@dimen/_30sdp"
+            android:layout_margin="@dimen/_10sdp"
+            android:background="@drawable/circle_white"
+            android:src="@drawable/ic_close_gray" />
+
+    </FrameLayout>
+
+
+</LinearLayout>

@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/_100sdp"
+    android:orientation="horizontal"
+    android:background="@android:color/white"
+    android:padding="@dimen/_10sdp">
+
+    <ImageView
+        android:id="@+id/restaurantImg"
+        android:layout_width="@dimen/_80sdp"
+        android:layout_height="@dimen/_80sdp"
+        android:src="@drawable/ic_image"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:paddingTop="@dimen/_10sdp"
+        android:paddingBottom="@dimen/_10sdp"
+        android:paddingLeft="@dimen/_10sdp">
+
+        <TextView
+            android:id="@+id/restaurantTitleTv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:maxLines="2"
+            style="@style/text_item_title"
+            android:text="Nama Penginapan"
+            />
+
+        <TextView
+            android:id="@+id/locationTv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:maxLines="2"
+            android:layout_marginTop="@dimen/_5sdp"
+            style="@style/text_item_location"
+            android:text="Lokasi Penginapan"
+            />
+
+    </LinearLayout>
+
+</LinearLayout>
